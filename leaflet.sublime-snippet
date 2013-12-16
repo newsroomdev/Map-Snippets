@@ -1,0 +1,31 @@
+<snippet>
+  <content><![CDATA[
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>$1</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css" />
+  <style>
+    body { margin:0; padding:0; }
+    #map { position:absolute; top:0; bottom:0; width:100%; }
+  <style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+      var map = L.map('map');
+      L.tileLayer('http://{s}.tile.cloudmade.com/API-key/997/256/{z}/{x}/{y}.png', {
+          attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
+      }).addTo(map);
+      $2
+    </script>
+</body>
+</html>
+]]></content>
+  <tabTrigger>leaflet</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.html</scope> -->
+</snippet>
