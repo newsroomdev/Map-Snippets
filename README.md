@@ -58,11 +58,11 @@ __leaflet__
   <script>
     var map = L.map('map');
     L.tileLayer('http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png', {
-        key: "",
+        key: $2,
         styleId: "997",
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
     }).addTo(map);
-    $2
+    $3
   </script>
 </body>
 </html>
