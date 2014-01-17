@@ -51,16 +51,18 @@ __leaflet__
   <style type="text/css">
     body { margin:0; padding:0; }
     #map { position:absolute; top:0; bottom:0; width:100%; }
-  <style>
+  </style>
 </head>
 <body>
   <div id="map"></div>
   <script>
     var map = L.map('map');
-    L.tileLayer('http://{s}.tile.cloudmade.com/API-key/997/256/{z}/{x}/{y}.png', {
+    L.tileLayer('http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png', {
+        key: $2,
+        styleId: "997",
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
     }).addTo(map);
-    $2
+    $3
   </script>
 </body>
 </html>
