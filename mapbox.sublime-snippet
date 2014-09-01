@@ -6,8 +6,8 @@
 <meta charset=utf-8 />
 <title>$1</title>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
-  <script src='//api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
-  <link href='//api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.0.1/mapbox.css' rel='stylesheet' />
   <style>
     body { margin:0; padding:0; }
     #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -16,8 +16,9 @@
 <body>
   <div id="map"></div>
   <script type="text/javascript">
-    var map = L.mapbox.map('map', 'examples.map-9ijuk24y');
-    $2
+    L.mapbox.accessToken = '$2'; //enter your access token here
+    var map = L.mapbox.map('map', '$3'); // enter map id here
+    $4
   </script>
 </body>
 </html>
