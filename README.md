@@ -2,7 +2,7 @@
 
 _Work in progress._
 
-Type the snippet shortcode and then press <kbd>Tab</kbd> to complete the snippet. Each shortcut provides a basic HTML page skeleton for the latest version of popular JavaScript mapping APIs. 
+Type the snippet shortcode and then press <kbd>Tab</kbd> to complete the snippet. Each shortcut provides a basic HTML page skeleton for the latest version of popular JavaScript mapping APIs.
 
 The snippets are listed below in alphabetical order. The '$1' indicates the position of the caret/s. Any snippet that has a $1/$2/$3/etc. uses this technique. Pressing tab will cycle you through these positions.
 
@@ -91,5 +91,40 @@ __mapbox__
     $2
   </script>
 </body>
+</html>
+```
+
+__ol3 (OpenLayers 3)__
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="http://openlayers.org/en/v3.0.0/css/ol.css" type="text/css">
+    <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+    <script src="http://openlayers.org/en/v3.0.0/build/ol.js" type="text/javascript"></script>
+    <title>adsadas</title>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script type="text/javascript">
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: [0,0],
+          zoom: 2
+        })
+      });
+    </script>
+  </body>
 </html>
 ```
